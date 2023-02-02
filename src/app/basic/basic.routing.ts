@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
@@ -12,7 +13,11 @@ export const BasicRoutes: Routes = [{
         component: InfrastructureComponent
     },
     {
-        path: 'activity',
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: 'aim',
         component: ActivityComponent
     },
     {

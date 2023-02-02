@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { StructureComponent } from './structure/structure.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -17,6 +18,7 @@ import { StructureComponent } from './structure/structure.component';
     ActivityComponent,
     ContactComponent,
     StructureComponent,
+    AboutComponent,
   ],
   imports: [
     CommonModule,
