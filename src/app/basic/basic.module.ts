@@ -9,6 +9,8 @@ import { ActivityComponent } from './activity/activity.component';
 import { ContactComponent } from './contact/contact.component';
 import { StructureComponent } from './structure/structure.component';
 import { AboutComponent } from './about/about.component';
+import { HomeModule } from '../home/home.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -25,6 +27,9 @@ import { AboutComponent } from './about/about.component';
     SharedModule,
     RouterModule.forChild(BasicRoutes),
     NgbModule,
+    HomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BasicModule { }

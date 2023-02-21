@@ -1,0 +1,452 @@
+<app-header></app-header>
+<body class="defult-home">
+    <!-- Intro Courses -->
+    <section class="intro-section gray-bg pt-40 pb-100 md-pt-64 md-pb-70">
+        <div class="container">
+            <div class="row clearfix">
+                <!-- Content Column -->
+                <!-- <div class="col-lg-12 md-mb-50"> -->
+
+                <div class="col-md-12 md-mb-50" style="border: 1px solid #ac6d5e; border-radius: 10px 10px 0px 0px;">
+
+                    <div id="title_form"
+                        style="background: #ac6d5e; padding: 1px; margin-right: -15px; margin-left: -15px; border-radius: 10px 10px 0px 0px;">
+                        <h4
+                            style="color: #fff; border-radius: 10px 10px 0px 0px; margin-top: 10px; text-align: center;">
+                            Student's Information Form
+                        </h4>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px; margin-top: 15px">Unique Enrollment Id <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Unique_Enrollment_Id" type="text" maxlength="100"
+                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$txt_Unique_Enrollment_Id\',\'\')', 0)"
+                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                id="ctl00_ContentPlaceHolder1_txt_Unique_Enrollment_Id" class="form-control"
+                                autocomplete="off" placeholder="Unique Enrollment Id *">
+
+
+                            <span id="ctl00_ContentPlaceHolder1_req_Unique_Enollment_Id"
+                                style="color:Red;display:none;">* this field is required.</span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3 style="font-size: 15px; margin-top: 15px">SPU Id <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Spu_Id" type="text" maxlength="100"
+                                id="ctl00_ContentPlaceHolder1_txt_Spu_Id" class="form-control" autocomplete="off"
+                                placeholder="SPU Id *">
+                            <span id="ctl00_ContentPlaceHolder1_req_Spu_Id" style="color:Red;display:none;">* this
+                                field is required.</span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3 style="font-size: 15px; margin-top: 15px">Roll No</h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Roll_No" type="text" maxlength="100"
+                                id="ctl00_ContentPlaceHolder1_txt_Roll_No" class="form-control" autocomplete="off"
+                                placeholder="Roll No">
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+
+
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px; margin-top: 15px">Email Id <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Email_Id" type="text" maxlength="100"
+                                id="ctl00_ContentPlaceHolder1_txt_Email_Id" class="form-control" autocomplete="off"
+                                placeholder="Email Id *">
+                            <span id="ctl00_ContentPlaceHolder1_req_Email_Id" style="color:Red;display:none;">* this
+                                field is required.</span>
+                            <span id="ctl00_ContentPlaceHolder1_reg_Email_Id" style="color:Red;display:none;">Enter
+                                valid email address.</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px; margin-top: 15px">Programme Name <span
+                                    style="color: #ff0000;">*</span></h3>
+
+                            <select name="ctl00$ContentPlaceHolder1$ddl_Program_Name"
+                                id="ctl00_ContentPlaceHolder1_ddl_Program_Name" class="form-control"
+                                placeholder="Programme *">
+                                <option value="0">----- Select -----</option>
+                                <option value="1">B.Sc.</option>
+
+                            </select>
+                            <span id="ctl00_ContentPlaceHolder1_req_Program_Name" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row clearfix">
+                        <div class="col-md-4">
+                            <h3 style="font-size: 15px; margin-top: 15px">Class <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <select name="ctl00$ContentPlaceHolder1$ddl_class"
+                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddl_class\',\'\')', 0)"
+                                id="ctl00_ContentPlaceHolder1_ddl_class" class="form-control">
+                                <option selected="selected" value="-">-----Select-----</option>
+                                <option value="F.Y.">F.Y.</option>
+                                <option value="S.Y.">S.Y.</option>
+                                <option value="T.Y.">T.Y.</option>
+
+                            </select>
+                            <span id="ctl00_ContentPlaceHolder1_req_class" style="color:Red;display:none;">* this
+                                field is required.</span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 style="font-size: 15px; margin-top: 15px">Class Division </h3>
+                            <select name="ctl00$ContentPlaceHolder1$ddl_Division"
+                                id="ctl00_ContentPlaceHolder1_ddl_Division" class="form-control">
+                                <option selected="selected" value="A">A</option>
+                                <option value="B">B</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 style="font-size: 15px; margin-top: 15px">Subject <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <select name="ctl00$ContentPlaceHolder1$ddlist_Subject"
+                                id="ctl00_ContentPlaceHolder1_ddlist_Subject" class="form-control"
+                                placeholder="Subject *">
+
+                            </select>
+                            <span id="ctl00_ContentPlaceHolder1_req_Subject" style="color:Red;display:none;">* this
+                                field is required.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row clearfix">
+                        <div class="col-md-4">
+                            <h3 style="font-size: 15px; margin-top: 15px">First Name <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Firstname" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Firstname" class="form-control" autocomplete="off"
+                                placeholder="First Name *" style="text-transform: uppercase">
+                            <span id="ctl00_ContentPlaceHolder1_req_Firstname" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+
+                        <div class="col-md-4" >
+                            <h3 style="font-size: 15px; margin-top: 15px">Middle Name <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Middlename" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Middlename" class="form-control" autocomplete="off"
+                                placeholder="Middle Name *" style="text-transform: uppercase">
+                            <span id="ctl00_ContentPlaceHolder1_req_Middlename" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3 style="font-size: 15px; margin-top: 15px">Surname <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Surname" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Surname" class="form-control" autocomplete="off"
+                                placeholder="Surname Name *" style="text-transform: uppercase">
+                            <span id="ctl00_ContentPlaceHolder1_req_Surname" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <div>
+                                <h3 style="font-size: 15px; margin-top: 15px">Present Address <span
+                                        style="color: #ff0000;">*</span></h3>
+                                <textarea name="ctl00$ContentPlaceHolder1$txt_Present_Address" rows="2" cols="20"
+                                    id="ctl00_ContentPlaceHolder1_txt_Present_Address" class="form-control"
+                                    autocomplete="off" placeholder="Present Address *" style="height:76px;"></textarea>
+                                <span id="ctl00_ContentPlaceHolder1_req_Present_Address"
+                                    style="color:Red;display:none;">* this field is required.</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div>
+                                <h3 style="font-size: 15px; margin-top: 15px">Permanent Address <span
+                                        style="color: #ff0000;">*</span></h3>
+                                <textarea name="ctl00$ContentPlaceHolder1$txt_Permanent_Address" rows="2" cols="20"
+                                    id="ctl00_ContentPlaceHolder1_txt_Permanent_Address" class="form-control"
+                                    autocomplete="off" placeholder="Permanent Address *"
+                                    style="height:76px;"></textarea>
+                                <span id="ctl00_ContentPlaceHolder1_req_Permanent_Address"
+                                    style="color:Red;display:none;">* this field is required.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+
+                            <div class="col-md-6" >
+                                <h3 style="font-size: 15px; margin-top: 15px">Parents Number <span
+                                        style="color: #ff0000;">*</span></h3>
+                                <input name="ctl00$ContentPlaceHolder1$txt_Parents_Mobile_Number" type="text"
+                                    maxlength="12"
+                                    onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$txt_Parents_Mobile_Number\',\'\')', 0)"
+                                    onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                    id="ctl00_ContentPlaceHolder1_txt_Parents_Mobile_Number" class="form-control"
+                                    autocomplete="off" placeholder="Parents Number *">
+
+                                <span id="ctl00_ContentPlaceHolder1_req_Parents_Mobile_Number"
+                                    style="color:Red;display:none;">* this field is required.</span>
+                                <span id="ctl00_ContentPlaceHolder1_req_Parent_Number"
+                                    style="color:Red;visibility:hidden;">Enter valid Mobile Number.</span>
+                            </div>
+
+                   
+
+                        <div class="col-md-6">
+                            <div class="clearfix">&nbsp;</div>
+                            <div class="clearfix">&nbsp;</div>
+                            <div class="row clearfix" style="border: 1px solid #ccc; border-radius: 4px;">
+                                <div class="col-md-4">
+                                    <h3 style="font-size: 15px; margin: 0px; margin-top: 3px">Gender <span
+                                            style="color: #ff0000;">*</span></h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <p style="margin-top: 8px; font-size: 15px; margin-bottom: 6px">
+                                        <input id="ctl00_ContentPlaceHolder1_rb_Gender_Male" type="radio"
+                                            name="ctl00$ContentPlaceHolder1$Gender" value="rb_Gender_Male"
+                                            checked="checked"><label
+                                            for="ctl00_ContentPlaceHolder1_rb_Gender_Male">&nbsp; Male</label>
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p style="margin-top: 8px; font-size: 15px; margin-bottom: 6px">
+                                        <input id="ctl00_ContentPlaceHolder1_rb_Gender_Female" type="radio"
+                                            name="ctl00$ContentPlaceHolder1$Gender" value="rb_Gender_Female"><label
+                                            for="ctl00_ContentPlaceHolder1_rb_Gender_Female">&nbsp; Female</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="col-md-6" >
+                            <h3 style="font-size: 15px; margin-top: 15px">Students Number <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Student_Mobile_Number" type="text" maxlength="12"
+                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$txt_Student_Mobile_Number\',\'\')', 0)"
+                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                id="ctl00_ContentPlaceHolder1_txt_Student_Mobile_Number" class="form-control"
+                                autocomplete="off" placeholder="Student Number *">
+
+                            <span id="ctl00_ContentPlaceHolder1_req_Student_Mobile_Number"
+                                style="color:Red;visibility:hidden;">* this field is required.</span>
+                        </div>
+                        <div class="col-md-6" >
+                            <h3 style="font-size: 15px; margin-top: 15px">Blood Group <span
+                                    style="color: #ff0000;">*</span></h3>
+                            <select name="ctl00$ContentPlaceHolder1$ddlist_Blood_Group"
+                                id="ctl00_ContentPlaceHolder1_ddlist_Blood_Group" class="form-control">
+                                <option value="-">-----Select-----</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+
+                            </select>
+                            <span id="ctl00_ContentPlaceHolder1_req_Blood_Group" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6" >
+                            <h3 style="font-size: 15px;">Date of Birth <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Date_Of_Birth" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Date_Of_Birth"
+                                class="form-control dtpick hasDatepicker" autocomplete="off"
+                                placeholder="DD-MMM-YYYY">
+                            <span id="ctl00_ContentPlaceHolder1_req_Date_Of_Birth" style="color:Red;display:none;">*
+                                this field is required.</span>
+                            <span id="ctl00_ContentPlaceHolder1_reg_DOB"
+                                style="color:Red;visibility:hidden;">Invalid date format.
+                                Ex:01-January-2000</span>
+                        </div>
+                        
+                        <div class="col-md-6" >
+                            <h3 style="font-size: 15px;">City <span style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_City" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_City" class="form-control" placeholder="City *"
+                                autocomplete="off">
+                            <span id="ctl00_ContentPlaceHolder1_req_City" style="color:Red;display:none;">* this
+                                field is required.</span>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        
+                        <div class="col-md-6" >
+
+                            <h3 style="font-size: 15px;">Pin Code <span style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Pin_Code" type="text" maxlength="6"
+                                id="ctl00_ContentPlaceHolder1_txt_Pin_Code" class="form-control" autocomplete="off"
+                                placeholder="Pincode *">
+                            <span id="ctl00_ContentPlaceHolder1_req_txt_Pin_Code" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+                        <div class="col-md-6" >
+                            <h3 style="font-size: 15px;">Nationality <span style="color: #ff0000;">*</span></h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Nationality" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Nationality" class="form-control"
+                                autocomplete="off" placeholder="Nationality *">
+                            <span id="ctl00_ContentPlaceHolder1_req_txt_Nationality"
+                                style="color:Red;display:none;">* this field is required.</span>
+                        </div>
+                        
+                    </div>
+                  
+
+
+
+                    <div class="row clearfix">
+                        
+
+                            <div class="col-md-6">
+                                <h3 style="font-size: 15px;  margin-top: 15px;">State of Domicle <span style="color: #ff0000;">*</span>
+                                </h3>
+                                <select name="ctl00$ContentPlaceHolder1$ddl_State_Of_Domicle"
+                                    onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddl_State_Of_Domicle\',\'\')', 0)"
+                                    id="ctl00_ContentPlaceHolder1_ddl_State_Of_Domicle" class="tool_bg form-control"
+                                    maxlength="20">
+                                    <option value="-">----- Select -----</option>
+                                    <option value="Jammu &amp; Kasshantinathr">Jammu &amp; Kasshantinathr</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Chattisgarh">Chattisgarh</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                    <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Lakshadweep Islands">Lakshadweep Islands</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Pondicherry">Pondicherry</option>
+                                    <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands
+                                    </option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Andhra Pradesh (New)">Andhra Pradesh (New)</option>
+
+                                </select>
+                                <span id="ctl00_ContentPlaceHolder1_req_ddl_State_Of_Domicle"
+                                    style="color:Red;display:none;">* this field is required.</span>
+
+                            </div>
+                        
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px; margin-top: 15px;">Category <span style="color: #ff0000;">*</span></h3>
+                            <select name="ctl00$ContentPlaceHolder1$ddlist_Category"
+                                id="ctl00_ContentPlaceHolder1_ddlist_Category" class="form-control">
+                                <option value="-">-----Select-----</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                                <option value="Open">Open</option>
+                                <option value="OBC">OBC</option>
+                                <option value="EWS">EWS</option>
+                                <option value="Minority">Minority</option>
+                                <option value="PH">PH</option>
+
+                            </select>
+                            <span id="ctl00_ContentPlaceHolder1_req_ddlist_Category" style="color:Red;display:none;">*
+                                this field is required.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row clearfix">
+
+
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px;  margin-top: 15px;">Adhar Card Number <span style="color: #ff0000;">*</span>
+                            </h3>
+                            <input name="ctl00$ContentPlaceHolder1$txt_Adhar_Card_Number" type="text" maxlength="12"
+                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$txt_Adhar_Card_Number\',\'\')', 0)"
+                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                id="ctl00_ContentPlaceHolder1_txt_Adhar_Card_Number" class="form-control"
+                                autocomplete="off" placeholder="Adhar Card Number *">
+
+                            <span id="ctl00_ContentPlaceHolder1_req_txt_Adhar_Card_Number"
+                                style="color:Red;display:none;">* this field is required.</span>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 style="font-size: 15px;  margin-top: 15px;">Father Occupation <span style="color: #ff0000;">*</span>
+                            </h3>
+
+                            <input name="ctl00$ContentPlaceHolder1$txt_Father_Occupation" type="text"
+                                id="ctl00_ContentPlaceHolder1_txt_Father_Occupation" class="form-control"
+                                autocomplete="off" placeholder="Father Occupation *">
+                            <span id="ctl00_ContentPlaceHolder1_req_txt_Father_Occupation"
+                                style="color:Red;display:none;">* this field is required.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row clearfix">
+                        <div class="col-md-6">
+                            <div class="clearfix">&nbsp;</div>
+
+                            <div style="margin-top: 5%">
+
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btn_Submit" value="Submit"
+                                    id="ctl00_ContentPlaceHolder1_btn_Submit"
+                                    style="background: #ac6d5e; border: 1px solid #ac6d5e; color: #fff;
+                                    padding: 12px 50px; font-size: 17px; border-radius: 5px; border-color: #fff; font-weight: 600;">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix">&nbsp;</div>
+
+
+
+
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+</body>
+
+<app-footer></app-footer>
